@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/white"
+        android:elevation="100dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="#E2E2E2"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+                <TextView
+                    android:layout_weight="6"
+                    android:id="@+id/txtOrderNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Order No: 49"
+                    android:textColor="#757575"
+                    android:textSize="13.8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gray_line_color" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/txtStoreName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Umiya Store"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:text="@string/order_placed"
+                    android:textColor="@color/text_mrp_grey"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtOrderPlaced"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:textColor="@color/text_mrp_grey"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:text="@string/order_delivered"
+                    android:textColor="@color/text_mrp_grey"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtOrderDelivered"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:textColor="@color/text_mrp_grey"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:text="@string/end_date_of_payment"
+                    android:textColor="@color/text_mrp_grey"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEndDatePayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:textColor="@color/text_mrp_grey"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gray_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:text="@string/amount"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:lineSpacingExtra="11.3sp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/pending_item_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
